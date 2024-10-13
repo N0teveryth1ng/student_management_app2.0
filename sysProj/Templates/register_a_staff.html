@@ -7,6 +7,8 @@
     <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='styles/edit_user.css')}}">
     <script src="{{ url_for('static', filename='javascripts/add.js') }}" defer></script>
     <script src="{{ url_for('static', filename='javascripts/access_data.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='javascripts/register_a_staff.js') }}" defer></script>
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -19,6 +21,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  
+
+
   </head>
   <body>
     <section class="contact-from pt-1">
@@ -124,6 +130,8 @@
                         class="form-control"
                         name="contact"
                         placeholder="Phone number"
+                        pattern="\d{10}" 
+                    title="Phone number must be exactly 10 digits."
                       />
                     </div>
                   </div>
@@ -262,5 +270,6 @@
     <footer style="display: flex; align-items: center; justify-content: space-around;"><p>@CopyRightReserved</p>
       <p>~Rudra❤️Saha</p>
 </footer>
+
   </body>
 </html>

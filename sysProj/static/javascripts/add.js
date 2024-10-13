@@ -29,3 +29,5 @@ cross.addEventListener('click', (e) =>{
     popUp.style.display = 'none';
     
 });
+
+
